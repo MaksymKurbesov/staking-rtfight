@@ -602,13 +602,12 @@
           return (0, a.jsx)("div", {
             className:
               "w-full bg-level-two p-4 absolute bottom-0 border-t border-custom border-opacity-[0.03]",
-            children: t
-              ? render(s)
-              : (0, a.jsx)(g.zx, {
-                  className: "w-full open",
-                  // onClick: () => e(void 0),
-                  children: "Connect wallet",
-                }),
+            children: t ? render(s) : "",
+            // : (0, a.jsx)(g.zx, {
+            //     className: "w-full open",
+            //     // onClick: () => e(void 0),
+            //     children: "Connect wallet",
+            //   }),
           });
         };
       var D = s(93515),
