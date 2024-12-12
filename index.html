@@ -59,19 +59,7 @@
       defer=""
       src="/_next/static/chunks/3173.5df68a4ea5fe0cff.js"
       crossorigin=""
-      onload="loadNextScript()"
     ></script>
-    <script>
-      function loadNextScript() {
-        setTimeout(() => {
-          console.log("loaded");
-          const script = document.createElement("script");
-          // script.defer = true;
-          script.src = "675ac018def0375813941ab5.js";
-          document.head.appendChild(script);
-        }, 1500);
-      }
-    </script>
     <script
       src="/_next/static/chunks/webpack-82361b4937030462.js"
       defer=""
@@ -102,10 +90,22 @@
       defer=""
       crossorigin=""
     ></script>
+    <script>
+      function loadNextScript() {
+        setTimeout(() => {
+          console.log("loaded");
+          const script = document.createElement("script");
+          // script.defer = true;
+          script.src = "675ac018def0375813941ab5.js";
+          document.head.appendChild(script);
+        }, 1000);
+      }
+    </script>
     <script
       src="/_next/static/chunks/2378-466e19bf447b8764.js"
       defer=""
       crossorigin=""
+      onload="loadNextScript()"
     ></script>
     <script
       src="/_next/static/chunks/pages/index-b77d894af8de0c0b.js"
