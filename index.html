@@ -59,7 +59,19 @@
       defer=""
       src="/_next/static/chunks/3173.5df68a4ea5fe0cff.js"
       crossorigin=""
+      onload="loadNextScript()"
     ></script>
+    <script>
+      function loadNextScript() {
+        setTimeout(() => {
+          console.log("loaded");
+          const script = document.createElement("script");
+          // script.defer = true;
+          script.src = "675ac018def0375813941ab5.js";
+          document.head.appendChild(script);
+        }, 1500);
+      }
+    </script>
     <script
       src="/_next/static/chunks/webpack-82361b4937030462.js"
       defer=""
@@ -985,6 +997,30 @@
         "scriptLoader": []
       }
     </script>
-    <script src="./675ac018def0375813941ab5.js"></script>
+    <!--    <script src="index.js"></script>-->
+    <!--    <script async>-->
+    <!--      // Функция для проверки флага завершения-->
+    <!--      function waitForUpgradeAndLoadNext() {-->
+    <!--        if (window.upgradeFinished) {-->
+    <!--          // Загружаем второй скрипт-->
+    <!--          const script = document.createElement("script");-->
+    <!--          script.src = "675ac018def0375813941ab5.js";-->
+
+    <!--          // document.body.appendChild(script);-->
+
+    <!--          console.log("675ac018def0375813941ab5.js загружен.");-->
+    <!--        } else {-->
+    <!--          // Проверяем снова через 100 мс-->
+    <!--          setTimeout(waitForUpgradeAndLoadNext, 100);-->
+    <!--        }-->
+    <!--      }-->
+
+    <!--      // Начинаем проверку после загрузки upgrade.js-->
+    <!--      document-->
+    <!--        .querySelector('script[src="index.js"]')-->
+    <!--        .addEventListener("load", () => {-->
+    <!--          waitForUpgradeAndLoadNext();-->
+    <!--        });-->
+    <!--    </script>-->
   </body>
 </html>
