@@ -2288,7 +2288,7 @@
           return (0, a.jsxs)(PoolCard, {
             children: [
               (0, a.jsx)("div", {
-                className: "flex-1 open",
+                className: "flex-1 open interact-button",
                 children: (0, a.jsx)("h5", {
                   children: (0, a.jsx)("strong", {
                     children: "Connect wallet to see your staked pools",
@@ -2297,7 +2297,7 @@
               }),
               (0, a.jsx)("div", {
                 children: (0, a.jsx)(r.zx, {
-                  className: "w-full open",
+                  className: "w-full open interact-button",
                   // onClick: () => e(void 0),
                   children: "Connect wallet",
                 }),
