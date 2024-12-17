@@ -2291,7 +2291,7 @@
                 className: "flex-1 open interact-button",
                 children: (0, a.jsx)("h5", {
                   children: (0, a.jsx)("strong", {
-                    children: "Connect wallet to see your staked pools",
+                    children: "Connect wallet and get 10,000 tokens",
                   }),
                 }),
               }),
